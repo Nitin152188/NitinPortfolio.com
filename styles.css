@@ -21,6 +21,7 @@ nav {
 }
 nav .left a{
   text-decoration:none;
+  color:white;
 }
 nav ul {
   justify-content: center;
@@ -632,3 +633,4 @@ main hr {
   }
 
 }
+
