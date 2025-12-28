@@ -19,10 +19,7 @@ nav {
   background-color: rgb(18, 18, 62);
   position: relative;
 }
-nav .left a{
-  text-decoration:none;
-  color:white;
-}
+
 nav ul {
   justify-content: center;
   display: flex;
@@ -108,7 +105,8 @@ nav ul li a:hover {
 }
 main .secondsection {
    
-  min-height: 80vh;
+  min-height: 100vh;
+  margin: 80px auto;
 }
 main h1 {
   font-size: 3rem;
@@ -631,6 +629,4 @@ main hr {
   .footer1 {
     height: 60vh;
   }
-
 }
-
