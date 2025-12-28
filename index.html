@@ -12,19 +12,77 @@
   <link rel="shortcut icon" href="dev.jpeg" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
 </head>
-
+<style>
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+.section-title h2{
+  font-size:32px;
+}
+.section-title p{
+  color:#9ca3af;
+  margin-top:10px;
+}
+.container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+}
+.card{
+  background:#111827;
+  border:1px solid #1f2937;
+  border-radius:14px;
+  padding:24px;
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#2563eb;
+}
+.icon{
+  width:44px;
+  height:44px;
+  border-radius:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:15px;
+  font-size:18px;
+}
+.blue{background:#1e3a8a;color:#3b82f6;}
+.green{background:#064e3b;color:#10b981;}
+.yellow{background:#422006;color:#f59e0b;}
+h3{
+  font-size:18px;
+  margin-bottom:8px;
+}
+p{
+  font-size:14px;
+  color:#9ca3af;
+  line-height:1.6;
+}
+@media(max-width:900px){
+  .container{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+  .container{grid-template-columns:1fr;}
+}
+</style>
 
 <body>
   <header>
     <!---Nav-Bar---->
     <nav>
-      <div class="left"><a href = "#"><i class="fa-solid fa-code"></i> Nitin's Portfolio</a></div>
+      <div class="left"><i class="fa-solid fa-code"></i> Nitin's Portfolio</div>
       <div class="right">
         <ul>
           <li>
@@ -65,11 +123,51 @@
     <section class="secondsection">
       <span class="text-grey">what I have done so far </span>
       <h1>Work Experience</h1>
-      <div class="box">
-        <div class="verticle">helo world</div>
-        <div class="verticle">hello world</div>
-        <div class="verticle">hello world</div>
-      </div>
+      
+<div class="section-title">
+  <h2>What I Bring to the Table</h2>
+  <p>Skills, projects, and mindset that define me as a developer</p>
+</div>
+
+<div class="container">
+
+  <div class="card">
+      <div class="icon blue"><i class="fa-solid fa-code"></i></div>
+      <h3>Technical Skills</h3>
+      <p>Core Java, OOPs, HTML, CSS, JavaScript, MySQL, Git & GitHub with strong fundamentals.</p>
+  </div>
+
+  <div class="card">
+      <div class="icon green"><i class="fa-solid fa-diagram-project"></i></div>
+      <h3>Real Projects</h3>
+      <p>Built Student Management System, Calculator App, Database-driven Java applications.</p>
+  </div>
+
+  <div class="card">
+      <div class="icon yellow"><i class="fa-solid fa-brain"></i></div>
+      <h3>Problem Solving</h3>
+      <p>Hands-on with DSA basics, logical thinking, and Java-based algorithm implementation.</p>
+  </div>
+
+  <div class="card">
+      <div class="icon blue"><i class="fa-solid fa-book-open"></i></div>
+      <h3>Continuous Learning</h3>
+      <p>Actively learning Advanced Java, JDBC, and moving towards Spring Boot.</p>
+  </div>
+
+  <div class="card">
+      <div class="icon green"><i class="fa-solid fa-toolbox"></i></div>
+      <h3>Developer Tools</h3>
+      <p>Comfortable with VS Code, Eclipse, MySQL Workbench, GitHub, and debugging tools.</p>
+  </div>
+
+  <div class="card">
+      <div class="icon yellow"><i class="fa-solid fa-bullseye"></i></div>
+      <h3>Career Goal</h3>
+      <p>Aspiring Java Full Stack Developer focused on clean code and real-world solutions.</p>
+  </div>
+
+</div>
     </section>
   </main>
   <footer>
@@ -106,7 +204,8 @@
           </li>
 
           <li>
-            <a href=""> <i class="bi bi-youtube"></i> YouTube</a>
+            <a href="https://www.linkedin.com/in/nitin-gupta-bbb8a23a1/"><i class="fa-brands fa-linkedin"></i>
+              Linkdin</a>
           </li>
 
           <li>
@@ -142,6 +241,5 @@
   </script>
 
 </body>
-
 
 </html>
